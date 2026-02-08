@@ -5,7 +5,6 @@ import styles from "./page.module.css";
 import { ArrowRight, Github, HyperLink } from "@/components/icons";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
-import GitHub from "@/components/icons/svg/Github";
 
 const pageVariants = {
   initial: { opacity: 0, x: -50 },

@@ -8,8 +8,24 @@
   },
   "Home": {
     "hero": {
-      "jobStatus": "Available for work",
-      "description": "I'm a passionate developer with experience in creating modern web applications. I specialize in React, Next.js, and Node.js."
+      "jobStatus": "Website still in development",
+      "title": "Software Developer with a strong systems background",
+      "description": "I design and build well-structured software, focusing on maintainability, performance, and clarity. I enjoy working across the stack, from infrastructure and backend logic to clean, functional interfaces."
+    },
+    "intro": {
+      "title": "What I do",
+      "text": "I work at the intersection of software development and system administration. This allows me to understand not only how applications are written, but also how they run, scale, and fail in real environments."
+    },
+    "skillsPreview": {
+      "title": "Core skills",
+      "text": "My technical profile combines development and infrastructure, with a strong focus on clean architecture and long-term maintainability."
+    },
+    "projectsPreview": {
+      "title": "Selected projects",
+      "text": "A small selection of projects where I applied these principles to solve real problems, improve systems, or explore new ideas."
+    },
+    "closing": {
+      "text": "If you value well-thought-out systems and clean solutions, you’ll probably feel at home here."
     }
   }
 }

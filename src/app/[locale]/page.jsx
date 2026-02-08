@@ -24,12 +24,20 @@ export default function Home() {
     >
       <div className={styles.heroContent}>
         <h1>
-          Yossef Errazik
+          Yossef Errazik{" "}
           <span className={styles.jobStatus}>{t("hero.jobStatus")}</span>
         </h1>
+        <h2 className={styles.heroTitle}>{t("hero.title")}</h2>
+
         <br />
+
+        {/* Descripción principal */}
         <p>{t("hero.description")}</p>
+
         <br />
+
+        <p className={styles.heroIntro}>{t("intro.text")}</p>
+
         <div className={styles.socialLinks}>
           <button className="button">
             <Github />
@@ -45,6 +53,7 @@ export default function Home() {
           </button>
         </div>
       </div>
+
       <div className={styles.heroImage}>
         <img
           src="https://placehold.co/900x600"

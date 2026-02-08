@@ -135,9 +135,11 @@ const Experience = () => {
       animate="animate"
       exit="exit"
     >
-      <h1>Experiencia & Competencias</h1>
+      <h1># Experiencia & Competencias</h1>
 
-      <h2>Áreas de Especialización</h2>
+      <h2>
+        <span className="hashtag">##</span> Áreas de Especialización
+      </h2>
       <div className={styles.competenciesGrid}>
         {competencies.map((category, index) => (
           <div key={index} className={styles.competencyCategory}>

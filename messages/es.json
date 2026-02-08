@@ -8,8 +8,24 @@
   },
   "Home": {
     "hero": {
-      "jobStatus": "Disponible para trabajar",
-      "description": "Soy un desarrollador apasionado con experiencia en la creación de aplicaciones web modernas. Me especializo en React, Next.js y Node.js."
+      "jobStatus": "Web aun en desarrollo",
+      "title": "Desarrollador de software con base sólida en sistemas",
+      "description": "Diseño y construyo software bien estructurado, priorizando la claridad, el mantenimiento y el rendimiento. Me muevo cómodo entre infraestructura, backend y frontend técnico."
+    },
+    "intro": {
+      "title": "A qué me dedico",
+      "text": "Trabajo en el punto donde se cruzan el desarrollo de software y la administración de sistemas. Esto me permite entender no solo cómo se escribe una aplicación, sino cómo se ejecuta, escala y se mantiene en producción."
+    },
+    "skillsPreview": {
+      "title": "Habilidades principales",
+      "text": "Mi perfil combina desarrollo e infraestructura, con especial atención a la arquitectura, el orden y la sostenibilidad técnica a largo plazo."
+    },
+    "projectsPreview": {
+      "title": "Proyectos destacados",
+      "text": "Una selección de proyectos donde aplico estos principios para resolver problemas reales, mejorar sistemas existentes o experimentar con nuevas ideas."
+    },
+    "closing": {
+      "text": "Si te gustan los sistemas bien pensados y las soluciones limpias, probablemente encajemos."
     }
   }
 }

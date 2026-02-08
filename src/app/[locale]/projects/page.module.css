@@ -6,15 +6,13 @@
   width: 80vw;
 }
 
-/* Contenedor principal de proyectos */
 .projectsContainer {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem; /* 24px → 1.5rem */
+  gap: 1.5rem;
   margin-top: 1.5rem;
 }
 
-/* Tarjeta individual de proyecto */
 .projectCard {
   align-items: center;
   background-color: var(--color-gray-800);
@@ -23,52 +21,42 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: space-between;
-  padding: 1rem; /* 16px → 1rem */
-}
+  padding: 1rem;
 
-/* Etiquetas de tecnologías */
-.tags {
-  display: flex;
-  gap: 0.5rem; /* 8px → 0.5rem */
-  margin-top: 0.5rem;
-}
-
-.tags span {
-  background-color: var(--color-gray-700);
-  border-radius: 4px;
-  color: var(--color-gray-300);
-  font-size: 0.75rem; /* 12px → 0.75rem */
-  padding: 0.25rem 0.5rem; /* 4px 8px → 0.25rem 0.5rem */
-}
-
-/* Contenedor de enlaces/botones */
-.linkContainer {
-  align-items: center;
-  color: var(--color-blue-400);
-  cursor: pointer;
-  display: flex;
-  font-weight: 600;
-  gap: 0.5rem;
-}
-
-/* === RESPONSIVE === */
-
-/* Móvil */
-@media (max-width: 767px) {
-  .projects {
-    margin-top: 10vh;
-    width: 90vw;
+  .tags {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
   }
 
-  .projects h1 {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 0.4rem;
-    justify-content: flex-start; /* Cambiado de center a flex-start */
+  .tags span {
+    background-color: var(--color-gray-700);
+    border-radius: 4px;
+    color: var(--color-gray-300);
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
   }
-}
 
-/* Tablet/Desktop - Ya aplicado por defecto, solo ajustes específicos */
-@media (min-width: 768px) {
-  /* Reglas específicas para desktop si son necesarias */
+  .linkContainer {
+    align-items: center;
+    color: var(--color-blue-400);
+    cursor: pointer;
+    display: flex;
+    font-weight: 600;
+    gap: 0.5rem;
+  }
+
+  @media (max-width: 767px) {
+    .projects {
+      margin-top: 10vh;
+      width: 90vw;
+    }
+
+    .projects h1 {
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 0.4rem;
+      justify-content: flex-start;
+    }
+  }
 }
