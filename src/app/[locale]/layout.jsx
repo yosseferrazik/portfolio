@@ -11,33 +11,52 @@ import { AnimatePresence } from "framer-motion";
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
-export const metadata = {
-  title: "Yossef Errazik | Desarrollador Web & Portfolio",
-  description:
-    "Portfolio personal de Yossef Errazik, desarrollador web especializado en React, Next.js y diseño moderno.",
-  keywords: [
-    "Yossef Errazik",
-    "desarrollador web",
-    "frontend developer",
-    "backend developer",
-    "Next.js",
-    "portfolio",
-  ],
-  authors: [{ name: "Yossef Errazik" }],
-  creator: "Yossef Errazik",
-  openGraph: {
-    title: "Yossef Errazik | Desarrollador Web",
-    description: "Portfolio personal con proyectos, experiencia y contacto.",
-    url: "https://yosseferrazik.com",
-    siteName: "Yossef Errazik",
-    locale: "es_ES",
-    type: "website",
-  },
-  robots: {
-    index: true,
-    follow: true,
-  },
-};
+
+const SITE_URL = "https://yosseferrazik.com";
+
+export async function generateMetadata({ params }) {
+  const { locale } = await params;
+  const isSpanish = locale === "es";
+
+  const title = "Yossef Errazik | Software Developer";
+  const description = isSpanish
+    ? "Portfolio de Yossef Errazik con experiencia, proyectos y datos de contacto."
+    : "Portfolio of Yossef Errazik featuring experience, projects, and contact details.";
+
+  return {
+    metadataBase: new URL(SITE_URL),
+    title,
+    description,
+    keywords: [
+      "Yossef Errazik",
+      "software developer",
+      "frontend developer",
+      "backend developer",
+      "Next.js",
+      "portfolio",
+    ],
+    authors: [{ name: "Yossef Errazik" }],
+    creator: "Yossef Errazik",
+    openGraph: {
+      title,
+      description,
+      url: `/${locale}`,
+      siteName: "Yossef Errazik",
+      locale: isSpanish ? "es_ES" : "en_US",
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+    },
+    robots: {
+      index: true,
+      follow: true,
+    },
+  };
+}
+
 export default async function LocaleLayout({ children, params }) {
   const { locale } = await params;
 
@@ -52,11 +71,11 @@ export default async function LocaleLayout({ children, params }) {
       <body>
         <NextIntlClientProvider messages={messages}>
           <main>
-            <div className={`optionContainer`}>
+            <div className="optionContainer">
               <LanguageSwitcher />
             </div>
             <AnimatePresence>
-              <section className={`content`}>{children}</section>
+              <section className="content">{children}</section>
             </AnimatePresence>
           </main>
           <Navbar />

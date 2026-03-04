@@ -4,6 +4,7 @@ import { useTranslations } from "next-intl";
 import styles from "./page.module.css";
 import { Github, Email, Linkedin } from "@/components/icons";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const pageVariants = {
   initial: { opacity: 0, x: -50 },
@@ -13,6 +14,17 @@ const pageVariants = {
 
 export default function Home() {
   const t = useTranslations("Home");
+  const personSchema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Yossef Errazik",
+    url: "https://yosseferrazik.com",
+    jobTitle: "Software Developer",
+    sameAs: [
+      "https://github.com/yosseferrazik",
+      "https://www.linkedin.com/in/yosseferrazik/",
+    ],
+  };
 
   return (
     <motion.div
@@ -29,38 +41,52 @@ export default function Home() {
         </h1>
         <h2 className={styles.heroTitle}>{t("hero.title")}</h2>
 
-        <br />
-
-        {/* Descripción principal */}
         <p>{t("hero.description")}</p>
-
-        <br />
-
         <p className={styles.heroIntro}>{t("intro.text")}</p>
 
         <div className={styles.socialLinks}>
-          <button className="button">
+          <a
+            className="button"
+            href="https://github.com/yosseferrazik"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Github />
-            &nbsp;GitHub
-          </button>
-          <button className="button">
+            {t("actions.github")}
+          </a>
+          <a
+            className="button"
+            href="https://www.linkedin.com/in/yosseferrazik/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Linkedin />
-            &nbsp;Linkedin
-          </button>
-          <button className="button">
+            {t("actions.linkedin")}
+          </a>
+          <a
+            className="button button-primary"
+            href="mailto:contacto@yosseferrazik.com"
+          >
             <Email />
-            &nbsp;Email
-          </button>
+            {t("actions.email")}
+          </a>
         </div>
       </div>
 
       <div className={styles.heroImage}>
-        <img
+        <Image
           src="https://placehold.co/900x600"
-          alt="Yossef Errazik"
-          style={{ borderRadius: "10px" }}
+          alt={t("hero.imageAlt")}
+          width={900}
+          height={600}
+          priority
+          style={{ borderRadius: "10px", width: "100%", height: "auto" }}
         />
       </div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+      />
     </motion.div>
   );
 }

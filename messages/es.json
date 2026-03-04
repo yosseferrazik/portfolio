@@ -1,31 +1,197 @@
 {
   "Navigation": {
     "home": "Inicio",
-    "about": "Sobre mí",
+    "about": "Sobre mi",
     "experience": "Experiencia",
     "projects": "Proyectos",
     "contact": "Contacto"
   },
+  "Common": {
+    "languageSwitcher": "Cambiar idioma"
+  },
   "Home": {
     "hero": {
-      "jobStatus": "Web aun en desarrollo",
-      "title": "Desarrollador de software con base sólida en sistemas",
-      "description": "Diseño y construyo software bien estructurado, priorizando la claridad, el mantenimiento y el rendimiento. Me muevo cómodo entre infraestructura, backend y frontend técnico."
+      "jobStatus": "Disponible para oportunidades profesionales",
+      "title": "Desarrollador de software orientado a producto y sistemas",
+      "description": "Diseno y desarrollo aplicaciones web mantenibles, con foco en arquitectura limpia, rendimiento y calidad de codigo. Trabajo con criterio tecnico desde el backend hasta la experiencia final de usuario.",
+      "imageAlt": "Foto de perfil de Yossef Errazik"
     },
     "intro": {
-      "title": "A qué me dedico",
-      "text": "Trabajo en el punto donde se cruzan el desarrollo de software y la administración de sistemas. Esto me permite entender no solo cómo se escribe una aplicación, sino cómo se ejecuta, escala y se mantiene en producción."
+      "title": "Que aporto",
+      "text": "Combino desarrollo de software y fundamentos de sistemas para crear soluciones robustas, escalables y faciles de operar. Mi objetivo es entregar productos utiles y tecnicamente sostenibles en el tiempo."
     },
-    "skillsPreview": {
-      "title": "Habilidades principales",
-      "text": "Mi perfil combina desarrollo e infraestructura, con especial atención a la arquitectura, el orden y la sostenibilidad técnica a largo plazo."
-    },
-    "projectsPreview": {
-      "title": "Proyectos destacados",
-      "text": "Una selección de proyectos donde aplico estos principios para resolver problemas reales, mejorar sistemas existentes o experimentar con nuevas ideas."
-    },
-    "closing": {
-      "text": "Si te gustan los sistemas bien pensados y las soluciones limpias, probablemente encajemos."
+    "actions": {
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "email": "Contactar"
     }
+  },
+  "About": {
+    "title": "Sobre mi",
+    "summary": {
+      "p1": "Soy desarrollador de software con enfoque full-stack y orientacion clara a la calidad tecnica. Trabajo para construir soluciones utiles, mantenibles y alineadas con objetivos reales de producto.",
+      "p2": "Me interesa participar en equipos donde se valoren la responsabilidad, la mejora continua y la buena comunicacion. Mi objetivo es aportar valor desde el analisis inicial hasta la entrega final."
+    },
+    "interestsTitle": "Intereses profesionales",
+    "workStyleTitle": "Forma de trabajo",
+    "workStyleText": "Priorizo claridad, ownership y resultados medibles. Me gusta mantener una base de codigo ordenada, documentada y preparada para evolucionar sin friccion a medida que crecen los requisitos del proyecto.",
+    "interests": [
+      {
+        "title": "Arquitectura de software",
+        "description": "Diseno de aplicaciones mantenibles, modulares y orientadas a escalabilidad.",
+        "tag": "Ingenieria"
+      },
+      {
+        "title": "Backend y APIs",
+        "description": "Construccion de servicios claros y bien documentados, con foco en rendimiento y seguridad.",
+        "tag": "Desarrollo"
+      },
+      {
+        "title": "Frontend orientado a producto",
+        "description": "Interfaces limpias y funcionales, enfocadas en experiencia de usuario y comunicacion visual.",
+        "tag": "Producto"
+      },
+      {
+        "title": "Automatizacion",
+        "description": "Uso de scripts y herramientas para reducir tareas manuales y mejorar la eficiencia tecnica.",
+        "tag": "Productividad"
+      },
+      {
+        "title": "Aprendizaje continuo",
+        "description": "Actualizacion constante en tecnologias y buenas practicas para mantener un perfil competitivo.",
+        "tag": "Crecimiento"
+      },
+      {
+        "title": "Open source",
+        "description": "Interes activo en proyectos abiertos para aprender, colaborar y compartir soluciones.",
+        "tag": "Comunidad"
+      }
+    ]
+  },
+  "Experience": {
+    "title": "Experiencia y competencias",
+    "areasTitle": "Areas de especializacion",
+    "timelineTitle": "Trayectoria",
+    "competencies": [
+      {
+        "icon": "code",
+        "title": "Desarrollo de software",
+        "skills": ["React", "Next.js", "TypeScript", "Node.js", "Python", "APIs REST", "Git", "Testing"]
+      },
+      {
+        "icon": "server",
+        "title": "Sistemas y operaciones",
+        "skills": ["Linux", "Windows Server", "Bash", "Virtualizacion", "Containers", "Monitoreo"]
+      },
+      {
+        "icon": "cloud",
+        "title": "Cloud e infraestructura",
+        "skills": ["AWS", "Azure", "Terraform", "Kubernetes", "Networking", "Load balancing"]
+      },
+      {
+        "icon": "database",
+        "title": "Bases de datos",
+        "skills": ["PostgreSQL", "MySQL", "MongoDB", "Redis", "Diseno de esquemas", "Backups"]
+      },
+      {
+        "icon": "shield",
+        "title": "Seguridad",
+        "skills": ["SSL/TLS", "Hardening", "Control de accesos", "Buenas practicas", "Analisis de riesgos"]
+      },
+      {
+        "icon": "terminal",
+        "title": "DevOps y automatizacion",
+        "skills": ["CI/CD", "GitHub Actions", "Jenkins", "Ansible", "Prometheus", "Grafana"]
+      }
+    ],
+    "featuredSkills": ["Next.js", "Linux", "AWS"],
+    "timeline": [
+      {
+        "date": "2025 - Actualidad",
+        "position": "Desarrollo de portfolio y proyectos tecnicos",
+        "org": "Marca personal",
+        "modality": "Remoto",
+        "description": "Diseno y construccion de proyectos para demostrar capacidades en frontend, backend y arquitectura de software, con foco en calidad de entrega y documentacion tecnica."
+      },
+      {
+        "date": "2024 - 2025",
+        "position": "Proyectos web y automatizacion",
+        "org": "Colaboraciones y practica profesional",
+        "modality": "Remoto / Hibrido",
+        "description": "Implementacion de soluciones web modernas, integracion de APIs y automatizacion de tareas para mejorar procesos y reducir tiempos operativos."
+      },
+      {
+        "date": "2023 - 2024",
+        "position": "Practica intensiva en sistemas y desarrollo",
+        "org": "Formacion tecnica",
+        "modality": "Presencial",
+        "description": "Consolidacion de fundamentos en sistemas, redes y desarrollo de software, aplicados en entornos de laboratorio y proyectos guiados."
+      }
+    ]
+  },
+  "Projects": {
+    "title": "Proyectos",
+    "description": "Seleccion de trabajos que reflejan mi enfoque tecnico: soluciones mantenibles, orientadas a resultados y con criterios de calidad.",
+    "cta": "Ver mas en GitHub",
+    "actions": {
+      "aria": "Acciones del proyecto",
+      "viewDemo": "Ver demo",
+      "viewCode": "Ver codigo",
+      "viewDetails": "Ver detalles"
+    },
+    "items": [
+      {
+        "name": "Portfolio profesional multilenguaje",
+        "description": "Sitio web personal desarrollado con Next.js y arquitectura modular, orientado a mostrar perfil tecnico, experiencia y proyectos.",
+        "tags": ["Next.js", "React", "CSS Modules", "i18n"],
+        "demoUrl": "https://yosseferrazik.com",
+        "codeUrl": "https://github.com/yosseferrazik",
+        "detailsUrl": "https://yosseferrazik.com"
+      },
+      {
+        "name": "API de gestion de tareas",
+        "description": "Servicio backend con autenticacion, control de acceso y endpoints REST para gestion de proyectos y seguimiento de estados.",
+        "tags": ["Node.js", "Express", "PostgreSQL", "JWT"],
+        "codeUrl": "https://github.com/yosseferrazik"
+      },
+      {
+        "name": "Automatizacion de flujos internos",
+        "description": "Conjunto de scripts y pipelines para reducir tareas manuales y mejorar tiempos operativos en entornos de desarrollo.",
+        "tags": ["Python", "Bash", "CI/CD", "DevOps"],
+        "codeUrl": "https://github.com/yosseferrazik"
+      }
+    ]
+  },
+  "Contact": {
+    "title": "Contacto",
+    "description": "Estoy abierto a oportunidades profesionales en desarrollo de software, colaboraciones tecnicas y proyectos freelance. Si crees que mi perfil puede aportar valor a tu equipo, estare encantado de hablar.",
+    "items": [
+      {
+        "icon": "mail",
+        "title": "Email",
+        "detail": "contacto@yosseferrazik.com",
+        "action": "mailto:contacto@yosseferrazik.com",
+        "buttonText": "Enviar mensaje"
+      },
+      {
+        "icon": "linkedin",
+        "title": "LinkedIn",
+        "detail": "linkedin.com/in/yosseferrazik",
+        "action": "https://linkedin.com/in/yosseferrazik",
+        "buttonText": "Conectar"
+      },
+      {
+        "icon": "github",
+        "title": "GitHub",
+        "detail": "github.com/yosseferrazik",
+        "action": "https://github.com/yosseferrazik",
+        "buttonText": "Ver repositorios"
+      },
+      {
+        "icon": "pin",
+        "title": "Ubicacion",
+        "detail": "Madrid, Espana"
+      }
+    ]
   }
 }

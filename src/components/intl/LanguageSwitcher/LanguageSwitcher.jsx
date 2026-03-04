@@ -1,6 +1,6 @@
 "use client";
 
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { useRouter, usePathname } from "@/i18n/routing";
 import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -11,11 +11,12 @@ import Spain from "@/components/icons/svg/Spain";
 import English from "@/components/icons/svg/English";
 
 const LANGUAGES = [
-  { code: "es", short: "ES", name: "Español", Icon: Spain },
+  { code: "es", short: "ES", name: "Espanol", Icon: Spain },
   { code: "en", short: "EN", name: "English", Icon: English },
 ];
 
 export default function LanguageSwitcher() {
+  const t = useTranslations("Common");
   const locale = useLocale();
   const router = useRouter();
   const pathname = usePathname();
@@ -30,7 +31,6 @@ export default function LanguageSwitcher() {
   const currentLang =
     LANGUAGES.find((lang) => lang.code === locale) || LANGUAGES[0];
 
-  // Cerrar al hacer clic fuera
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (wrapperRef.current && !wrapperRef.current.contains(event.target)) {
@@ -51,7 +51,7 @@ export default function LanguageSwitcher() {
         whileTap={{ scale: 0.98 }}
         onClick={() => setOpen((o) => !o)}
         aria-expanded={open}
-        aria-label="Cambiar idioma"
+        aria-label={t("languageSwitcher")}
       >
         <currentLang.Icon size={22} />
         <div className={styles.text}>

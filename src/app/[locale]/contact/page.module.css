@@ -1,9 +1,10 @@
 .contact {
   display: flex;
   flex-direction: column;
+  gap: 1rem;
   margin-inline: auto;
   margin-top: 15vh;
-  width: 80vw;
+  width: min(80vw, 1100px);
 }
 
 .contactMethods {
@@ -15,24 +16,25 @@
 
 .contactCard {
   align-items: center;
-  background-color: var(--color-gray-800);
-  border: 2px solid var(--color-gray-700);
+  background-color: var(--color-gray-750);
+  border: 1px solid var(--color-gray-650);
   border-radius: 10px;
   display: flex;
   gap: 1rem;
   padding: 1.5rem;
   transition:
-    border-color 0.2s,
-    transform 0.2s;
+    border-color 0.2s ease,
+    transform 0.2s ease;
   width: 100%;
 }
 
 .contactCard:hover {
-  border-color: var(--color-gray-600);
+  border-color: rgba(98, 95, 255, 0.45);
+  transform: translateY(-2px);
 }
 
 .contactIcon {
-  color: var(--color-blue-400);
+  color: var(--color-indigo-300);
   flex-shrink: 0;
 }
 
@@ -66,7 +68,6 @@
     align-items: flex-start;
     flex-direction: column;
     gap: 0.4rem;
-    justify-content: flex-start;
   }
 
   .contactCard {

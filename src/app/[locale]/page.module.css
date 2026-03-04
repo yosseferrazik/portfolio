@@ -3,7 +3,7 @@
   gap: 2rem;
   margin-inline: auto;
   margin-top: 15vh;
-  width: 80vw;
+  width: min(80vw, 1100px);
 }
 
 .heroContent {
@@ -11,10 +11,10 @@
 }
 
 .jobStatus {
-  background: rgba(84, 255, 46, 0.9);
+  background: rgba(98, 95, 255, 0.2);
+  border: 1px solid rgba(98, 95, 255, 0.45);
   border-radius: 999px;
-  box-shadow: 0 0 20px rgba(84, 255, 46, 0.8);
-  color: #3d763d;
+  color: var(--color-indigo-100);
   font-size: 0.75rem;
   font-weight: 600;
   line-height: 1;
@@ -24,6 +24,7 @@
 
 .socialLinks {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   margin-top: 1.5rem;
 }
@@ -32,7 +33,7 @@
   align-items: center;
   display: flex;
   justify-content: flex-end;
-  max-width: 400px;
+  max-width: 420px;
   width: 100%;
 }
 
@@ -62,10 +63,6 @@
 }
 
 @media (min-width: 769px) {
-  .hero {
-    gap: 2rem;
-  }
-
   .jobStatus {
     font-size: 0.875rem;
   }

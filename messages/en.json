@@ -6,26 +6,192 @@
     "projects": "Projects",
     "contact": "Contact"
   },
+  "Common": {
+    "languageSwitcher": "Change language"
+  },
   "Home": {
     "hero": {
-      "jobStatus": "Website still in development",
-      "title": "Software Developer with a strong systems background",
-      "description": "I design and build well-structured software, focusing on maintainability, performance, and clarity. I enjoy working across the stack, from infrastructure and backend logic to clean, functional interfaces."
+      "jobStatus": "Open to professional opportunities",
+      "title": "Software Developer focused on product and systems",
+      "description": "I design and build maintainable web applications with a strong focus on clean architecture, performance, and code quality. I work across backend and frontend to deliver reliable user-facing products.",
+      "imageAlt": "Profile photo of Yossef Errazik"
     },
     "intro": {
-      "title": "What I do",
-      "text": "I work at the intersection of software development and system administration. This allows me to understand not only how applications are written, but also how they run, scale, and fail in real environments."
+      "title": "What I bring",
+      "text": "I combine software engineering and systems fundamentals to create robust, scalable, and easy-to-operate solutions. My goal is to ship useful products that remain technically sustainable over time."
     },
-    "skillsPreview": {
-      "title": "Core skills",
-      "text": "My technical profile combines development and infrastructure, with a strong focus on clean architecture and long-term maintainability."
-    },
-    "projectsPreview": {
-      "title": "Selected projects",
-      "text": "A small selection of projects where I applied these principles to solve real problems, improve systems, or explore new ideas."
-    },
-    "closing": {
-      "text": "If you value well-thought-out systems and clean solutions, you’ll probably feel at home here."
+    "actions": {
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "email": "Contact"
     }
+  },
+  "About": {
+    "title": "About me",
+    "summary": {
+      "p1": "I am a software developer with a full-stack focus and a clear orientation toward technical quality. I build useful and maintainable solutions aligned with real product goals.",
+      "p2": "I enjoy working in teams that value accountability, continuous improvement, and clear communication. My goal is to create value from initial analysis through final delivery."
+    },
+    "interestsTitle": "Professional interests",
+    "workStyleTitle": "How I work",
+    "workStyleText": "I prioritize clarity, ownership, and measurable outcomes. I like to keep codebases organized and documented so they can evolve smoothly as requirements grow.",
+    "interests": [
+      {
+        "title": "Software architecture",
+        "description": "Designing maintainable, modular, and scalable applications.",
+        "tag": "Engineering"
+      },
+      {
+        "title": "Backend and APIs",
+        "description": "Building clear and well-documented services with a focus on performance and security.",
+        "tag": "Development"
+      },
+      {
+        "title": "Product-driven frontend",
+        "description": "Clean and functional interfaces focused on usability and visual communication.",
+        "tag": "Product"
+      },
+      {
+        "title": "Automation",
+        "description": "Using scripts and tooling to reduce manual work and improve technical efficiency.",
+        "tag": "Productivity"
+      },
+      {
+        "title": "Continuous learning",
+        "description": "Keeping up with modern tools and best practices to stay competitive.",
+        "tag": "Growth"
+      },
+      {
+        "title": "Open source",
+        "description": "Active interest in open projects to learn, collaborate, and share solutions.",
+        "tag": "Community"
+      }
+    ]
+  },
+  "Experience": {
+    "title": "Experience and competencies",
+    "areasTitle": "Areas of specialization",
+    "timelineTitle": "Career path",
+    "competencies": [
+      {
+        "icon": "code",
+        "title": "Software development",
+        "skills": ["React", "Next.js", "TypeScript", "Node.js", "Python", "REST APIs", "Git", "Testing"]
+      },
+      {
+        "icon": "server",
+        "title": "Systems and operations",
+        "skills": ["Linux", "Windows Server", "Bash", "Virtualization", "Containers", "Monitoring"]
+      },
+      {
+        "icon": "cloud",
+        "title": "Cloud and infrastructure",
+        "skills": ["AWS", "Azure", "Terraform", "Kubernetes", "Networking", "Load balancing"]
+      },
+      {
+        "icon": "database",
+        "title": "Databases",
+        "skills": ["PostgreSQL", "MySQL", "MongoDB", "Redis", "Schema design", "Backups"]
+      },
+      {
+        "icon": "shield",
+        "title": "Security",
+        "skills": ["SSL/TLS", "Hardening", "Access control", "Best practices", "Risk analysis"]
+      },
+      {
+        "icon": "terminal",
+        "title": "DevOps and automation",
+        "skills": ["CI/CD", "GitHub Actions", "Jenkins", "Ansible", "Prometheus", "Grafana"]
+      }
+    ],
+    "featuredSkills": ["Next.js", "Linux", "AWS"],
+    "timeline": [
+      {
+        "date": "2025 - Present",
+        "position": "Portfolio and technical projects",
+        "org": "Personal brand",
+        "modality": "Remote",
+        "description": "Design and delivery of projects that demonstrate frontend, backend, and software architecture capabilities, with emphasis on quality and technical documentation."
+      },
+      {
+        "date": "2024 - 2025",
+        "position": "Web projects and automation",
+        "org": "Collaborations and professional practice",
+        "modality": "Remote / Hybrid",
+        "description": "Implementation of modern web solutions, API integrations, and task automation to improve processes and reduce operational effort."
+      },
+      {
+        "date": "2023 - 2024",
+        "position": "Intensive practice in systems and development",
+        "org": "Powiatowy Urząd Pracy w Rybniku (Poland)",
+        "modality": "On-site",
+        "description": "Solid foundation in systems, networking, and software development applied through labs and guided projects."
+      }
+    ]
+  },
+  "Projects": {
+    "title": "Projects",
+    "description": "A selection of work that reflects my technical approach: maintainable solutions focused on outcomes and delivery quality.",
+    "cta": "View more on GitHub",
+    "actions": {
+      "aria": "Project actions",
+      "viewDemo": "View demo",
+      "viewCode": "View code",
+      "viewDetails": "View details"
+    },
+    "items": [
+      {
+        "name": "Multilingual professional portfolio",
+        "description": "Personal website built with Next.js and modular architecture to present technical profile, experience, and projects.",
+        "tags": ["Next.js", "React", "CSS Modules", "i18n"],
+        "demoUrl": "https://yosseferrazik.com",
+        "codeUrl": "https://github.com/yosseferrazik",
+        "detailsUrl": "https://yosseferrazik.com"
+      },
+      {
+        "name": "Task management API",
+        "description": "Backend service with authentication, access control, and REST endpoints for project tracking and status workflows.",
+        "tags": ["Node.js", "Express", "PostgreSQL", "JWT"],
+        "codeUrl": "https://github.com/yosseferrazik"
+      },
+      {
+        "name": "Internal workflow automation",
+        "description": "Set of scripts and pipelines to reduce manual work and improve operational efficiency across development workflows.",
+        "tags": ["Python", "Bash", "CI/CD", "DevOps"],
+        "codeUrl": "https://github.com/yosseferrazik"
+      }
+    ]
+  },
+  "Contact": {
+    "title": "Contact",
+    "description": "I am open to software development opportunities, technical collaborations, and freelance projects. If you think my profile can add value to your team, I would be glad to talk.",
+    "items": [
+      {
+        "icon": "mail",
+        "title": "Email",
+        "detail": "contacto@yosseferrazik.com",
+        "action": "mailto:contacto@yosseferrazik.com",
+        "buttonText": "Send message"
+      },
+      {
+        "icon": "linkedin",
+        "title": "LinkedIn",
+        "detail": "linkedin.com/in/yosseferrazik",
+        "action": "https://linkedin.com/in/yosseferrazik",
+        "buttonText": "Connect"
+      },
+      {
+        "icon": "github",
+        "title": "GitHub",
+        "detail": "github.com/yosseferrazik",
+        "action": "https://github.com/yosseferrazik",
+        "buttonText": "View repositories"
+      },
+      {
+        "icon": "pin",
+        "title": "Location",
+        "detail": "Madrid, Spain"
+      }
+    ]
   }
 }
