@@ -23,11 +23,13 @@
     "actions": {
       "github": "GitHub",
       "linkedin": "LinkedIn",
-      "email": "Contactar"
+      "email": "Contactar",
+      "downloadCv": "Descargar CV"
     }
   },
   "About": {
     "title": "Sobre mi",
+    "photoAlt": "Retrato de Yossef Errazik",
     "summary": {
       "p1": "Soy desarrollador de software con enfoque full-stack y orientacion clara a la calidad tecnica. Trabajo para construir soluciones utiles, mantenibles y alineadas con objetivos reales de producto.",
       "p2": "Me interesa participar en equipos donde se valoren la responsabilidad, la mejora continua y la buena comunicacion. Mi objetivo es aportar valor desde el analisis inicial hasta la entrega final."
@@ -71,27 +73,28 @@
   "Experience": {
     "title": "Experiencia y formacion",
     "areasTitle": "Competencias principales",
+    "stackTitle": "Lenguajes de programacion y tecnologias",
     "timelineTitle": "Trayectoria academica y profesional",
     "competencies": [
       {
         "icon": "server",
         "title": "Soporte IT y resolucion de incidencias",
-        "skills": ["Soporte tecnico", "Diagnostico de incidencias", "Resolucion de problemas", "Atencion a usuarios", "Seguimiento de incidencias"]
+        "skills": ["Soporte tecnico", "Diagnostico de incidencias", "Resolucion de problemas", "Atencion a usuarios", "Seguimiento de incidencias", "Windows 10/11", "Microsoft 365", "Google Workspace"]
       },
       {
         "icon": "code",
         "title": "Mantenimiento de hardware",
-        "skills": ["Montaje de equipos", "Mantenimiento preventivo", "Sustitucion de componentes", "Puesta a punto de puestos", "Revision de dispositivos"]
+        "skills": ["Montaje de equipos", "Mantenimiento preventivo", "Sustitucion de componentes", "Puesta a punto de puestos", "Revision de dispositivos", "Ensamblaje de PCs", "BIOS/UEFI", "Configuracion de perifericos"]
       },
       {
         "icon": "cloud",
         "title": "Fundamentos de sistemas y redes",
-        "skills": ["Formacion SMR", "Redes locales", "Bases de administracion de sistemas", "Servicios de red", "Diagnostico tecnico"]
+        "skills": ["Formacion SMR", "Redes locales", "Bases de administracion de sistemas", "Servicios de red", "Diagnostico tecnico", "Linux", "TCP/IP", "DNS/DHCP", "Fundamentos de Cisco", "VMWare"]
       },
       {
         "icon": "database",
         "title": "Inventario y organizacion tecnica",
-        "skills": ["Inventario de equipos", "Control de activos", "Registros tecnicos", "Organizacion de recursos", "Soporte operativo"]
+        "skills": ["Inventario de equipos", "Control de activos", "Registros tecnicos", "Organizacion de recursos", "Soporte operativo", "Hojas de calculo", "Etiquetado de activos"]
       },
       {
         "icon": "shield",
@@ -101,10 +104,25 @@
       {
         "icon": "terminal",
         "title": "Crecimiento tecnico continuo",
-        "skills": ["Estudios ASIR", "Aprendizaje practico", "Adaptabilidad", "Autonomia tecnica", "Mejora continua"]
+        "skills": ["Estudios ASIR", "Aprendizaje practico", "Adaptabilidad", "Autonomia tecnica", "Mejora continua", "PowerShell", "Bash", "Git"]
       }
     ],
-    "featuredSkills": ["Soporte tecnico", "Montaje de equipos", "Inventario de equipos"],
+    "featuredSkills": ["Windows 10/11", "Linux", "TCP/IP"],
+    "languagesAndTechnologies": [
+      {
+        "title": "Lenguajes de programacion",
+        "items": ["JavaScript", "TypeScript", "Python", "Rust", "SQL", "HTML", "CSS"]
+      },
+      {
+        "title": "Frameworks y librerias",
+        "items": ["React", "Next.js", "Node.js", "Express", "NestJS", "Socket.IO", "Tailwind CSS", "Framer Motion"]
+      },
+      {
+        "title": "Herramientas y plataformas",
+        "items": ["Git", "GitHub", "Postman", "PostgreSQL", "MySQL", "Linux", "Docker", "Vercel"]
+      }
+    ],
+    "featuredStack": ["JavaScript", "TypeScript", "Rust", "React", "Next.js", "NestJS", "Socket.IO", "PostgreSQL", "Git", "Docker"],
     "timeline": [
       {
         "date": "2025 - Actualidad",
@@ -152,7 +170,7 @@
         "description": "Sitio web personal desarrollado con Next.js y arquitectura modular, orientado a mostrar perfil tecnico, experiencia y proyectos.",
         "tags": ["Next.js", "React", "CSS Modules", "i18n"],
         "demoUrl": "https://yosseferrazik.com",
-        "codeUrl": "https://github.com/yosseferrazik",
+        "codeUrl": "https://github.com/yosseferrazik/portfolio",
         "detailsUrl": "https://yosseferrazik.com"
       },
       {
@@ -197,7 +215,7 @@
       {
         "icon": "pin",
         "title": "Ubicacion",
-        "detail": "Catalonia, Espana"
+        "detail": "Cataluna, Espana"
       }
     ]
   }

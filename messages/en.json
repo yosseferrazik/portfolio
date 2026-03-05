@@ -23,11 +23,13 @@
     "actions": {
       "github": "GitHub",
       "linkedin": "LinkedIn",
-      "email": "Contact"
+      "email": "Contact",
+      "downloadCv": "Download CV"
     }
   },
   "About": {
     "title": "About me",
+    "photoAlt": "Portrait of Yossef Errazik",
     "summary": {
       "p1": "I am a software developer with a full-stack focus and a clear orientation toward technical quality. I build useful and maintainable solutions aligned with real product goals.",
       "p2": "I enjoy working in teams that value accountability, continuous improvement, and clear communication. My goal is to create value from initial analysis through final delivery."
@@ -71,27 +73,28 @@
   "Experience": {
     "title": "Experience and education",
     "areasTitle": "Core competencies",
+    "stackTitle": "Programming languages and technologies",
     "timelineTitle": "Academic and professional path",
     "competencies": [
       {
         "icon": "server",
         "title": "IT support and incident resolution",
-        "skills": ["Technical support", "Incident diagnosis", "Troubleshooting", "User assistance", "Issue tracking"]
+        "skills": ["Technical support", "Incident diagnosis", "Troubleshooting", "User assistance", "Issue tracking", "Windows 10/11", "Microsoft 365", "Google Workspace"]
       },
       {
         "icon": "code",
         "title": "Hardware maintenance",
-        "skills": ["Hardware setup", "Preventive maintenance", "Component replacement", "Workstation preparation", "Device checks"]
+        "skills": ["Hardware setup", "Preventive maintenance", "Component replacement", "Workstation preparation", "Device checks", "PC assembly", "BIOS/UEFI", "Peripheral setup"]
       },
       {
         "icon": "cloud",
         "title": "Systems and network fundamentals",
-        "skills": ["SMR training", "Local networks", "System administration basics", "Network services", "Technical diagnostics"]
+        "skills": ["SMR training", "Local networks", "System administration basics", "Network services", "Technical diagnostics", "Linux", "TCP/IP", "DNS/DHCP", "Cisco basics", "VMWare"]
       },
       {
         "icon": "database",
         "title": "Inventory and technical organization",
-        "skills": ["Equipment inventory", "Asset control", "Technical records", "Resource organization", "Operational support"]
+        "skills": ["Equipment inventory", "Asset control", "Technical records", "Resource organization", "Operational support", "Spreadsheets", "Asset labeling"]
       },
       {
         "icon": "shield",
@@ -101,10 +104,25 @@
       {
         "icon": "terminal",
         "title": "Ongoing technical growth",
-        "skills": ["ASIR studies", "Hands-on learning", "Adaptability", "Technical autonomy", "Continuous improvement"]
+        "skills": ["ASIR studies", "Hands-on learning", "Adaptability", "Technical autonomy", "Continuous improvement", "PowerShell", "Bash", "Git"]
       }
     ],
-    "featuredSkills": ["Technical support", "Hardware setup", "Equipment inventory"],
+    "featuredSkills": ["Windows 10/11", "Linux", "TCP/IP"],
+    "languagesAndTechnologies": [
+      {
+        "title": "Programming languages",
+        "items": ["JavaScript", "TypeScript", "Python", "Rust", "SQL", "HTML", "CSS"]
+      },
+      {
+        "title": "Frameworks and libraries",
+        "items": ["React", "Next.js", "Node.js", "Express", "NestJS", "Socket.IO", "Tailwind CSS", "Framer Motion"]
+      },
+      {
+        "title": "Tools and platforms",
+        "items": ["Git", "GitHub", "Postman", "PostgreSQL", "MySQL", "Linux", "Docker", "Vercel"]
+      }
+    ],
+    "featuredStack": ["JavaScript", "TypeScript", "Rust", "React", "Next.js", "NestJS", "Socket.IO", "PostgreSQL", "Git", "Docker"],
     "timeline": [
       {
         "date": "2025 - Present",
@@ -152,7 +170,7 @@
         "description": "Personal website built with Next.js and modular architecture to present technical profile, experience, and projects.",
         "tags": ["Next.js", "React", "CSS Modules", "i18n"],
         "demoUrl": "https://yosseferrazik.com",
-        "codeUrl": "https://github.com/yosseferrazik",
+        "codeUrl": "https://github.com/yosseferrazik/portfolio",
         "detailsUrl": "https://yosseferrazik.com"
       },
       {
@@ -176,8 +194,8 @@
       {
         "icon": "mail",
         "title": "Email",
-        "detail": "contacto@yosseferrazik.com",
-        "action": "mailto:contacto@yosseferrazik.com",
+        "detail": "yosseferrazik@gmail.com",
+        "action": "mailto:yosseferrazik@gmail.com",
         "buttonText": "Send message"
       },
       {

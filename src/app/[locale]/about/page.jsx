@@ -3,6 +3,7 @@ import React from "react";
 import { useTranslations } from "next-intl";
 import styles from "./page.module.css";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const pageVariants = {
   initial: { opacity: 0, x: -50 },
@@ -24,9 +25,22 @@ const About = () => {
     >
       <h1>{t("title")}</h1>
 
-      <div className={styles.aboutSection}>
-        <p>{t("summary.p1")}</p>
-        <p>{t("summary.p2")}</p>
+      <div className={styles.introLayout}>
+        <div className={styles.portraitWrap}>
+          <Image
+            src="/yossef-errazik.webp"
+            alt={t("photoAlt")}
+            width={520}
+            height={640}
+            priority
+            style={{ borderRadius: "10px", width: "100%", height: "auto" }}
+          />
+        </div>
+
+        <div className={styles.introText}>
+          <p>{t("summary.p1")}</p>
+          <p>{t("summary.p2")}</p>
+        </div>
       </div>
 
       <h2>{t("interestsTitle")}</h2>

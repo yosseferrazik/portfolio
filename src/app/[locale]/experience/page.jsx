@@ -24,6 +24,8 @@ const Experience = () => {
   const t = useTranslations("Experience");
   const competencies = t.raw("competencies");
   const featuredSkills = new Set(t.raw("featuredSkills"));
+  const languagesAndTechnologies = t.raw("languagesAndTechnologies");
+  const featuredStack = new Set(t.raw("featuredStack"));
   const timelineItems = t.raw("timeline");
 
   return (
@@ -62,6 +64,25 @@ const Experience = () => {
             </div>
           );
         })}
+      </div>
+
+      <h2>{t("stackTitle")}</h2>
+      <div className={styles.stackGrid}>
+        {languagesAndTechnologies.map((group, index) => (
+          <div key={index} className={styles.competencyCategory}>
+            <div className={styles.categoryTitle}>{group.title}</div>
+            <div className={styles.competencyList}>
+              {group.items.map((item, itemIndex) => (
+                <span
+                  key={itemIndex}
+                  className={`${styles.competencyTag} ${featuredStack.has(item) ? styles.highlight : ""}`}
+                >
+                  {item}
+                </span>
+              ))}
+            </div>
+          </div>
+        ))}
       </div>
 
       <h2>{t("timelineTitle")}</h2>

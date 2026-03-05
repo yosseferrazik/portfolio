@@ -1,8 +1,8 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import styles from "./page.module.css";
-import { Github, Email, Linkedin } from "@/components/icons";
+import { Github, Email, Linkedin, Work } from "@/components/icons";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
@@ -14,6 +14,8 @@ const pageVariants = {
 
 export default function Home() {
   const t = useTranslations("Home");
+  const locale = useLocale();
+  const cvHref = locale === "es" ? "/cv_es.pdf" : "/cv_en.pdf";
   const personSchema = {
     "@context": "https://schema.org",
     "@type": "Person",
@@ -70,12 +72,16 @@ export default function Home() {
             <Email />
             {t("actions.email")}
           </a>
+          <a className="button" href={cvHref} download={`yossef-errazik-cv-${locale}.pdf`}>
+            <Work />
+            {t("actions.downloadCv")} ({locale.toUpperCase()})
+          </a>
         </div>
       </div>
 
       <div className={styles.heroImage}>
         <Image
-          src="https://placehold.co/900x600"
+          src="/landscape.webp"
           alt={t("hero.imageAlt")}
           width={900}
           height={600}

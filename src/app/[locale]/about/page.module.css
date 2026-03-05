@@ -11,6 +11,24 @@
   margin-bottom: 2.5rem;
 }
 
+.introLayout {
+  align-items: center;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: minmax(220px, 320px) 1fr;
+}
+
+.introText {
+  display: grid;
+  gap: 1rem;
+}
+
+.portraitWrap {
+  margin-inline: auto;
+  max-width: 420px;
+  width: 100%;
+}
+
 .hobbyGrid {
   display: grid;
   gap: 1.5rem;
@@ -67,6 +85,11 @@
     align-items: flex-start;
     flex-direction: column;
     gap: 0.4rem;
+  }
+
+  .introLayout {
+    gap: 1.25rem;
+    grid-template-columns: 1fr;
   }
 
   .hobbyGrid {
