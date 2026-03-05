@@ -69,63 +69,70 @@
     ]
   },
   "Experience": {
-    "title": "Experience and competencies",
-    "areasTitle": "Areas of specialization",
-    "timelineTitle": "Career path",
+    "title": "Experience and education",
+    "areasTitle": "Core competencies",
+    "timelineTitle": "Academic and professional path",
     "competencies": [
       {
-        "icon": "code",
-        "title": "Software development",
-        "skills": ["React", "Next.js", "TypeScript", "Node.js", "Python", "REST APIs", "Git", "Testing"]
+        "icon": "server",
+        "title": "IT support and incident resolution",
+        "skills": ["Technical support", "Incident diagnosis", "Troubleshooting", "User assistance", "Issue tracking"]
       },
       {
-        "icon": "server",
-        "title": "Systems and operations",
-        "skills": ["Linux", "Windows Server", "Bash", "Virtualization", "Containers", "Monitoring"]
+        "icon": "code",
+        "title": "Hardware maintenance",
+        "skills": ["Hardware setup", "Preventive maintenance", "Component replacement", "Workstation preparation", "Device checks"]
       },
       {
         "icon": "cloud",
-        "title": "Cloud and infrastructure",
-        "skills": ["AWS", "Azure", "Terraform", "Kubernetes", "Networking", "Load balancing"]
+        "title": "Systems and network fundamentals",
+        "skills": ["SMR training", "Local networks", "System administration basics", "Network services", "Technical diagnostics"]
       },
       {
         "icon": "database",
-        "title": "Databases",
-        "skills": ["PostgreSQL", "MySQL", "MongoDB", "Redis", "Schema design", "Backups"]
+        "title": "Inventory and technical organization",
+        "skills": ["Equipment inventory", "Asset control", "Technical records", "Resource organization", "Operational support"]
       },
       {
         "icon": "shield",
-        "title": "Security",
-        "skills": ["SSL/TLS", "Hardening", "Access control", "Best practices", "Risk analysis"]
+        "title": "Communication and teamwork",
+        "skills": ["Staff support", "Service mindset", "Clear communication", "Coordination with teams", "Responsibility"]
       },
       {
         "icon": "terminal",
-        "title": "DevOps and automation",
-        "skills": ["CI/CD", "GitHub Actions", "Jenkins", "Ansible", "Prometheus", "Grafana"]
+        "title": "Ongoing technical growth",
+        "skills": ["ASIR studies", "Hands-on learning", "Adaptability", "Technical autonomy", "Continuous improvement"]
       }
     ],
-    "featuredSkills": ["Next.js", "Linux", "AWS"],
+    "featuredSkills": ["Technical support", "Hardware setup", "Equipment inventory"],
     "timeline": [
       {
         "date": "2025 - Present",
-        "position": "Portfolio and technical projects",
-        "org": "Personal brand",
-        "modality": "Remote",
-        "description": "Design and delivery of projects that demonstrate frontend, backend, and software architecture capabilities, with emphasis on quality and technical documentation."
+        "position": "Higher Vocational Training in Network Systems Administration (ASIR)",
+        "org": "Current studies",
+        "modality": "On-site",
+        "description": "Started ASIR in 2025 and currently continuing training in systems administration, network infrastructure, and technical operations."
+      },
+      {
+        "date": "2025",
+        "position": "Technical Assistant - IT Department (Erasmus internship)",
+        "org": "PUP Rybnik (Poland)",
+        "modality": "On-site",
+        "description": "Participated in an Erasmus internship supporting equipment inventory management and providing general technical assistance in the IT department."
       },
       {
         "date": "2024 - 2025",
-        "position": "Web projects and automation",
-        "org": "Collaborations and professional practice",
-        "modality": "Remote / Hybrid",
-        "description": "Implementation of modern web solutions, API integrations, and task automation to improve processes and reduce operational effort."
+        "position": "IT Technician Trainee",
+        "org": "Institut Joaquim Ruyra (Blanes)",
+        "modality": "On-site",
+        "description": "Completed internship focused on hardware maintenance and IT support for staff, resolving technical issues and assisting with daily incidents."
       },
       {
-        "date": "2023 - 2024",
-        "position": "Intensive practice in systems and development",
-        "org": "Powiatowy Urząd Pracy w Rybniku (Poland)",
+        "date": "2023 - 2025",
+        "position": "Intermediate Vocational Training in Microcomputer Systems and Networks (SMR)",
+        "org": "Institut Sa Palomera (Blanes)",
         "modality": "On-site",
-        "description": "Solid foundation in systems, networking, and software development applied through labs and guided projects."
+        "description": "Completed SMR studies with practical training in computer systems, networking, technical support, and day-to-day IT operations."
       }
     ]
   },
@@ -190,7 +197,7 @@
       {
         "icon": "pin",
         "title": "Location",
-        "detail": "Madrid, Spain"
+        "detail": "Catalonia, Spain"
       }
     ]
   }

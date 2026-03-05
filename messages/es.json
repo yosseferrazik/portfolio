@@ -69,63 +69,70 @@
     ]
   },
   "Experience": {
-    "title": "Experiencia y competencias",
-    "areasTitle": "Areas de especializacion",
-    "timelineTitle": "Trayectoria",
+    "title": "Experiencia y formacion",
+    "areasTitle": "Competencias principales",
+    "timelineTitle": "Trayectoria academica y profesional",
     "competencies": [
       {
-        "icon": "code",
-        "title": "Desarrollo de software",
-        "skills": ["React", "Next.js", "TypeScript", "Node.js", "Python", "APIs REST", "Git", "Testing"]
+        "icon": "server",
+        "title": "Soporte IT y resolucion de incidencias",
+        "skills": ["Soporte tecnico", "Diagnostico de incidencias", "Resolucion de problemas", "Atencion a usuarios", "Seguimiento de incidencias"]
       },
       {
-        "icon": "server",
-        "title": "Sistemas y operaciones",
-        "skills": ["Linux", "Windows Server", "Bash", "Virtualizacion", "Containers", "Monitoreo"]
+        "icon": "code",
+        "title": "Mantenimiento de hardware",
+        "skills": ["Montaje de equipos", "Mantenimiento preventivo", "Sustitucion de componentes", "Puesta a punto de puestos", "Revision de dispositivos"]
       },
       {
         "icon": "cloud",
-        "title": "Cloud e infraestructura",
-        "skills": ["AWS", "Azure", "Terraform", "Kubernetes", "Networking", "Load balancing"]
+        "title": "Fundamentos de sistemas y redes",
+        "skills": ["Formacion SMR", "Redes locales", "Bases de administracion de sistemas", "Servicios de red", "Diagnostico tecnico"]
       },
       {
         "icon": "database",
-        "title": "Bases de datos",
-        "skills": ["PostgreSQL", "MySQL", "MongoDB", "Redis", "Diseno de esquemas", "Backups"]
+        "title": "Inventario y organizacion tecnica",
+        "skills": ["Inventario de equipos", "Control de activos", "Registros tecnicos", "Organizacion de recursos", "Soporte operativo"]
       },
       {
         "icon": "shield",
-        "title": "Seguridad",
-        "skills": ["SSL/TLS", "Hardening", "Control de accesos", "Buenas practicas", "Analisis de riesgos"]
+        "title": "Comunicacion y trabajo en equipo",
+        "skills": ["Soporte al personal", "Orientacion de servicio", "Comunicacion clara", "Coordinacion con equipos", "Responsabilidad"]
       },
       {
         "icon": "terminal",
-        "title": "DevOps y automatizacion",
-        "skills": ["CI/CD", "GitHub Actions", "Jenkins", "Ansible", "Prometheus", "Grafana"]
+        "title": "Crecimiento tecnico continuo",
+        "skills": ["Estudios ASIR", "Aprendizaje practico", "Adaptabilidad", "Autonomia tecnica", "Mejora continua"]
       }
     ],
-    "featuredSkills": ["Next.js", "Linux", "AWS"],
+    "featuredSkills": ["Soporte tecnico", "Montaje de equipos", "Inventario de equipos"],
     "timeline": [
       {
         "date": "2025 - Actualidad",
-        "position": "Desarrollo de portfolio y proyectos tecnicos",
-        "org": "Marca personal",
-        "modality": "Remoto",
-        "description": "Diseno y construccion de proyectos para demostrar capacidades en frontend, backend y arquitectura de software, con foco en calidad de entrega y documentacion tecnica."
+        "position": "Grado Superior en Administracion de Sistemas en Red (ASIR)",
+        "org": "Estudios actuales",
+        "modality": "Presencial",
+        "description": "Iniciado en 2025 y actualmente en curso, con formacion en administracion de sistemas, infraestructura de red y operaciones tecnicas."
+      },
+      {
+        "date": "2025",
+        "position": "Asistente tecnico - Departamento IT (practicas Erasmus)",
+        "org": "PUP Rybnik (Polonia)",
+        "modality": "Presencial",
+        "description": "Participacion en practicas Erasmus apoyando tareas de gestion de inventario de equipos y asistencia tecnica general dentro del departamento IT."
       },
       {
         "date": "2024 - 2025",
-        "position": "Proyectos web y automatizacion",
-        "org": "Colaboraciones y practica profesional",
-        "modality": "Remoto / Hibrido",
-        "description": "Implementacion de soluciones web modernas, integracion de APIs y automatizacion de tareas para mejorar procesos y reducir tiempos operativos."
+        "position": "Tecnico informatico en practicas",
+        "org": "Institut Joaquim Ruyra (Blanes)",
+        "modality": "Presencial",
+        "description": "Practicas centradas en mantenimiento de hardware y soporte IT al personal, resolviendo problemas tecnicos y apoyando incidencias diarias."
       },
       {
-        "date": "2023 - 2024",
-        "position": "Practica intensiva en sistemas y desarrollo",
-        "org": "Formacion tecnica",
+        "date": "2023 - 2025",
+        "position": "Grado Medio en Sistemas Microinformaticos y Redes (SMR)",
+        "org": "Institut Sa Palomera (Blanes)",
         "modality": "Presencial",
-        "description": "Consolidacion de fundamentos en sistemas, redes y desarrollo de software, aplicados en entornos de laboratorio y proyectos guiados."
+        "description": "Formacion completada en SMR con base practica en sistemas microinformaticos, redes, soporte tecnico y operaciones IT del dia a dia."
       }
     ]
   },
@@ -169,8 +176,8 @@
       {
         "icon": "mail",
         "title": "Email",
-        "detail": "contacto@yosseferrazik.com",
-        "action": "mailto:contacto@yosseferrazik.com",
+        "detail": "yosseferrazik@gmail.com",
+        "action": "mailto:yosseferrazik@gmail.com",
         "buttonText": "Enviar mensaje"
       },
       {
@@ -190,7 +197,7 @@
       {
         "icon": "pin",
         "title": "Ubicacion",
-        "detail": "Madrid, Espana"
+        "detail": "Catalonia, Espana"
       }
     ]
   }
