@@ -67,7 +67,7 @@ export default function Home() {
           </a>
           <a
             className="button button-primary"
-            href="mailto:contacto@yosseferrazik.com"
+            href="mailto:yosseferrazik@gmail.com"
           >
             <Email />
             {t("actions.email")}
