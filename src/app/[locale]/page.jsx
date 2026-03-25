@@ -5,6 +5,7 @@ import styles from "./page.module.css";
 import { Github, Email, Linkedin, Work } from "@/components/icons";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { Link } from "@/i18n/routing";
 
 const pageVariants = {
   initial: { opacity: 0, x: -50 },
@@ -65,13 +66,10 @@ export default function Home() {
             <Linkedin />
             {t("actions.linkedin")}
           </a>
-          <a
-            className="button button-primary"
-            href="mailto:yosseferrazik@gmail.com"
-          >
+          <Link className="button button-primary" href="/contact">
             <Email />
             {t("actions.email")}
-          </a>
+          </Link>
           <a className="button" href={cvHref} download={`yossef-errazik-cv-${locale}.pdf`}>
             <Work />
             {t("actions.downloadCv")} ({locale.toUpperCase()})
