@@ -207,8 +207,6 @@ a.button-primary:hover {
   display: flex;
   flex: 1;
   flex-direction: column;
-  min-height: 100vh;
-  padding-bottom: clamp(7rem, 12vw, 9rem);
   width: 100%;
 }
 
@@ -239,11 +237,6 @@ a.button-primary:hover {
 }
 
 @media (min-width: 768px) {
-  .content {
-    padding-bottom: clamp(3.5rem, 6vw, 5rem);
-    padding-right: 5rem;
-  }
-
   .optionContainer {
     align-items: center;
     flex-direction: row;

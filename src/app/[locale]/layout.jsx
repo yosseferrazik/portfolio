@@ -4,9 +4,7 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import "./global.css";
 
-import Navbar from "@/components/layout/Navbar/Navbar";
 import LanguageSwitcher from "@/components/intl/LanguageSwitcher/LanguageSwitcher";
-import { AnimatePresence } from "framer-motion";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -20,8 +18,8 @@ export async function generateMetadata({ params }) {
 
   const title = "Yossef Errazik | Software Developer";
   const description = isSpanish
-    ? "Portfolio de Yossef Errazik con experiencia, proyectos y datos de contacto."
-    : "Portfolio of Yossef Errazik featuring experience, projects, and contact details.";
+    ? "Nueva version del portfolio de Yossef Errazik. Proximamente."
+    : "A new version of Yossef Errazik's portfolio is coming soon.";
 
   return {
     metadataBase: new URL(SITE_URL),
@@ -51,7 +49,7 @@ export async function generateMetadata({ params }) {
       description,
     },
     robots: {
-      index: true,
+      index: false,
       follow: true,
     },
   };
@@ -74,11 +72,8 @@ export default async function LocaleLayout({ children, params }) {
             <div className="optionContainer">
               <LanguageSwitcher />
             </div>
-            <AnimatePresence>
-              <section className="content">{children}</section>
-            </AnimatePresence>
+            <section className="content">{children}</section>
           </main>
-          <Navbar />
         </NextIntlClientProvider>
       </body>
     </html>

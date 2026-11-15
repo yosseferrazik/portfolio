@@ -1,53 +1,27 @@
 "use client";
 
-import { useLocale, useTranslations } from "next-intl";
-import styles from "./page.module.css";
-import { Github, Email, Linkedin, Work } from "@/components/icons";
+import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
-import Image from "next/image";
-import { Link } from "@/i18n/routing";
+import styles from "./page.module.css";
+import { Github, Linkedin, Email } from "@/components/icons";
 
-const pageVariants = {
-  initial: { opacity: 0, x: -50 },
-  animate: { opacity: 1, x: 0 },
-  exit: { opacity: 0, x: 50 },
-};
-
-export default function Home() {
-  const t = useTranslations("Home");
-  const locale = useLocale();
-  const cvHref = locale === "es" ? "/cv_es.pdf" : "/cv_en.pdf";
-  const personSchema = {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    name: "Yossef Errazik",
-    url: "https://yosseferrazik.com",
-    jobTitle: "Software Developer",
-    sameAs: [
-      "https://github.com/yosseferrazik",
-      "https://www.linkedin.com/in/yosseferrazik/",
-    ],
-  };
+export default function ComingSoon() {
+  const t = useTranslations("ComingSoon");
 
   return (
     <motion.div
-      className={styles.hero}
-      variants={pageVariants}
-      initial="initial"
-      animate="animate"
-      exit="exit"
+      className={styles.container}
+      initial={{ opacity: 0, y: 24 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
     >
-      <div className={styles.heroContent}>
-        <h1>
-          Yossef Errazik{" "}
-          <span className={styles.jobStatus}>{t("hero.jobStatus")}</span>
-        </h1>
-        <h2 className={styles.heroTitle}>{t("hero.title")}</h2>
+      <div className={styles.card}>
+        <span className={styles.badge}>{t("badge")}</span>
+        <h1 className={styles.title}>Yossef Errazik</h1>
+        <h2 className={styles.heading}>{t("title")}</h2>
+        <p className={styles.description}>{t("description")}</p>
 
-        <p>{t("hero.description")}</p>
-        <p className={styles.heroIntro}>{t("intro.text")}</p>
-
-        <div className={styles.socialLinks}>
+        <div className={styles.links}>
           <a
             className="button"
             href="https://github.com/yosseferrazik"
@@ -55,7 +29,7 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             <Github />
-            {t("actions.github")}
+            GitHub
           </a>
           <a
             className="button"
@@ -64,33 +38,14 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             <Linkedin />
-            {t("actions.linkedin")}
+            LinkedIn
           </a>
-          <Link className="button button-primary" href="/contact">
+          <a className="button button-primary" href="mailto:yosseferrazik@gmail.com">
             <Email />
-            {t("actions.email")}
-          </Link>
-          <a className="button" href={cvHref} download={`yossef-errazik-cv-${locale}.pdf`}>
-            <Work />
-            {t("actions.downloadCv")} ({locale.toUpperCase()})
+            {t("email")}
           </a>
         </div>
       </div>
-
-      <div className={styles.heroImage}>
-        <Image
-          src="/landscape.webp"
-          alt={t("hero.imageAlt")}
-          width={900}
-          height={600}
-          priority
-          style={{ borderRadius: "10px", width: "100%", height: "auto" }}
-        />
-      </div>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
-      />
     </motion.div>
   );
 }

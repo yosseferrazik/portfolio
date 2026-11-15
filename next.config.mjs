@@ -4,8 +4,14 @@ const withNextIntl = createNextIntlPlugin("./src/i18n/request.jsx");
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  images: {
-    remotePatterns: [new URL("https://placehold.co/900x600")],
+  async redirects() {
+    return [
+      {
+        source: "/:locale(es|en)/:page(about|experience|projects|contact)",
+        destination: "/:locale",
+        permanent: false,
+      },
+    ];
   },
 };
 
